@@ -16,7 +16,7 @@ const AboutUs = () => (
     <HeaderOne />
     <PageTitleAbout
       title="About Us"
-      tagline="Creative Digital Agency since 2004"
+      tagline="TOSTEM Philippines Agency since 2004"
     />
     <WhoWeAreSeven />
     <OurSkillsTwo 
