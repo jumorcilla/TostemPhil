@@ -22,7 +22,7 @@ const AboutUsOne = ({
               {children}
               <a
                 href={linkButton}
-                className="btn btn-color btn-rounded btn-animate mt-20"
+                className="btn btn-yellow btn-rounded btn-animate mt-20"
               >
                 <span>
                   {textButton ? textButton : "Read more"}

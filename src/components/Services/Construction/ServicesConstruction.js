@@ -2,12 +2,12 @@ import React from "react";
 import dataServices from "../../../data/Services/services-construction-data.json";
 import Icofont from "react-icofont";
 
-const ServicesConstruction = () => (
+const ServicesConstruction = (props) => (
   <section className="dark-bg">
     <div className="container">
       <div className="row">
         <div className="col-md-8 section-heading">
-          <h2 className="text-uppercase white-color">Construction</h2>
+          <h2 className="text-uppercase white-color">{props.title}</h2>
           <hr className="text-center yellow-bg" />
         </div>
       </div>

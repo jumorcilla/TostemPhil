@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import dataGallery from "../../../data/Gallery/gallery-construction-data.json";
 
-const GalleryConstruction = () => (
+const GalleryConstruction = (props) => (
   <section className="pb-0">
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-8 section-heading">
-          <h2 className="text-uppercase">FEATURED PROJECTS</h2>
+          <h2 className="text-uppercase">{props.title}</h2>
           <hr className="text-center yellow-bg" />
         </div>
       </div>
