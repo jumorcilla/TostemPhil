@@ -37,13 +37,14 @@ const DropdownMenu = () => {
             className={
               "dropdown " + (dropdown.megaMenu === true ? "megamenu-fw" : "")
             }
-            onClick={(e) => handleHover(e)}
+            onClick={dropdown.isDropdown === true?(e) => handleHover(e):null}
             key={i}
           >
-            <a href="index" className="dropdown-toggle" data-toggle="dropdown">
+            <a href={dropdown.isDropdown === true? "index": dropdown.link} className={dropdown.isDropdown ===true? "dropdown-toggle" : ""} data-toggle="dropdown">
               {dropdown.title}
             </a>
-            {dropdown.megaMenu ? (
+            {dropdown.isDropdown === true? 
+              (dropdown.megaMenu ? (
               <MegaDropdown
                 item={dropdown.subMenu}
                 columnTitle={dropdown.colsTitle}
@@ -53,7 +54,8 @@ const DropdownMenu = () => {
               <DropdownItem
                 item={dropdown.subMenu}
               />
-            )}
+            )):
+              null}
           </li>
         ))}
       </ul>

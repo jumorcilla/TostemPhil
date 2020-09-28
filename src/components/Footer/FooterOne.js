@@ -1,6 +1,8 @@
 import React from "react";
 import logoFooter from "../../assets/images/logo-footer.png";
 import FooterCopyright from "./FooterCopyright";
+import logoWhite from "../../assets/images/logotostem.png";
+import dataForms from "../../data/Footer/app-downloadable-form.json";
 
 const FooterOne = () => (
   <>
@@ -14,25 +16,31 @@ const FooterOne = () => (
                   <a href={`${process.env.PUBLIC_URL}/`}>
                     <img
                       className="logo logo-display"
-                      src={logoFooter}
+                      src={logoWhite}
                       alt=""
                     />
                   </a>
                 </div>
                 <p>
-                  We are a fully in-house digital agency focusing on branding,
-                  marketing, web design and development with clients ranging
-                  from start-ups, Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Sed varius quam ut magna ultricies
-                  pellentesque.
+                  TOSTEM, which entered into the aluminum window business in 1996,
+                  was the last company to penetrate the market. But with full understanding
+                  of the needs of joiners, carpenters and builders through its experience in
+                  woooden doors and the windows wholesale business, TOSTEM was able to develop
+                  products that were competitive with leading manufacturers.
                 </p>
               </div>
             </div>
             <div className="col-sm-6 col-md-2">
               <div className="widget widget-links">
-                <h5 className="widget-title">Work With Us</h5>
+                <h5 className="widget-title">Dowloadable Forms</h5>
                 <ul>
-                  <li>
+                  {dataForms.map((forms,i)=>(
+                    <li key={i} >
+                    <a key={i} href={forms.link}>{forms.title}</a>
+                     </li>
+                    ))
+
+                  /*<li>
                     <a href="#!">Themeforest</a>
                   </li>
                   <li>
@@ -46,11 +54,22 @@ const FooterOne = () => (
                   </li>
                   <li>
                     <a href="#!">Envato Market</a>
-                  </li>
+                  </li>*/}
                 </ul>
               </div>
             </div>
-            <div className="col-sm-6 col-md-2">
+             <div className="col-sm-6 col-md-6">
+              <div className="widget widget-links">
+                <h5 className="widget-title">Signup for Newsletter</h5>
+                <div className="input-group">
+                <input placeholder="Email Address" type="search"  style={{ height: '48px' }} className="form-control"/>
+                <span className="input-group-btn">
+                <button className="btn btn-yellow btn-square" type="button"> Signup</button>
+                </span>
+                </div>
+                </div>
+                </div>
+            {/*<div className="col-sm-6 col-md-2">
               <div className="widget widget-links">
                 <h5 className="widget-title">Useful Links</h5>
                 <ul>
@@ -94,7 +113,7 @@ const FooterOne = () => (
                   </li>
                 </ul>
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
       </div>
