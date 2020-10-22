@@ -4,7 +4,7 @@ import dataSlider from "../../data/Slider/construction-data.json";
 import HeaderOne from "../../components/Header/HeaderOne";
 import ConstructionSlider from "../../components/Hero/Construction/ConstructionSlider";
 import ServicesConstruction from "../../components/Services/Construction/ServicesConstruction";
-import GalleryConstruction from "../../components/Gallery/Construction/GalleryConstruction";
+import GalleryConstruction from "../../components/Gallery/Construction/GalleryConstructionSlider";
 import CounterConstruction from "../../components/Counters/Construction/CounterConstruction";
 import TeamConstruction from "../../components/Team/Construction/TeamConstruction";
 import ContactConstruction from "../../components/ContactUs/Construction/ContactConstruction";
@@ -45,9 +45,9 @@ const Construction = () => {
         tristique.
       </p>
     </AboutUsOne>
-    {/* <TeamConstruction /><ContactConstruction />*/}
+    {/* <TeamConstruction /><ContactConstruction /> <ClientsBrand />*/}
      <BlogSlider />
-    <ClientsBrand />
+   
     <FooterOne/>
   </Loader>
 )};

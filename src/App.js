@@ -24,9 +24,13 @@ import Music from "./pages/home/Music";
 import Weddings from "./pages/home/Weddings";
 import DesignStudio from "./pages/home/DesignStudio";
 
-// Pages
+//About Us
 import AboutUs from "./pages/about/AboutUs";
-import AboutCreative from "./pages/about/AboutCreative";
+import AboutLixil from "./pages/about/AboutLixil";
+import OurJourney from "./pages/about/OurJourney";
+import ContactUs from "./pages/about/ContactUs"
+import OurTeam from "./pages/about/OurTeam"
+// Pages
 import ServiceSimple from "./pages/services/ServiceSimple";
 import ServiceCreative from "./pages/services/ServiceCreative";
 import ContactSimple from "./pages/contact/ContactSimple";
@@ -213,8 +217,23 @@ function App() {
           />
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/about-creative`}
-            component={AboutCreative}
+            path={`${process.env.PUBLIC_URL}/about-lixil`}
+            component={AboutLixil}
+          />
+            <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/our-journey`}
+            component={OurJourney}
+          />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/contact-us`}
+            component={ContactUs}
+          />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/our-team`}
+            component={OurTeam}
           />
           <Route
             exact

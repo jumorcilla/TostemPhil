@@ -35,9 +35,8 @@ const ConstructionSlider = ({ data }) => {
                   }}
                 ></div>
                 <div
-                  className={
-                    "hero-text-wrap " + (slide.bg ? "gradient-overlay-bg" : "")
-                  }
+                  className="hero-text-wrap"
+                  style={{backgroundColor: 'rgb(34 34 37 / 19%)'}}
                 >
                   <div className="hero-text white-color">
                     <div className="container text-center">

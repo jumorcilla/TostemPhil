@@ -3,27 +3,28 @@ import Loader from "../../components/Loader/Loader";
 import HeaderOne from "../../components/Header/HeaderOne";
 import PageTitleAbout from "../../components/PageTitle/PageTitleAbout";
 import WhoWeAreSeven from "../../components/WhoWeAre/WhoWeAreSeven";
-import OurSkillsTwo from "../../components/OurSkills/OurSkillsTwo";
-import CounterOne from "../../components/Counters/CounterOne";
-import OurServicesThree from "../../components/OurServices/OurServicesThree";
+import OurServicesThree from "../../components/OurServices/LixilServices";
 import OurTeamTwo from "../../components/Team/OurTeamTwo";
-import TestimonialsOne from "../../components/Testimonials/TestimonialsOne";
 import FooterOne from "../../components/Footer/FooterOne";
+import ClientsBrand from "../../components/ClientsBrand/ClientsBrand";
 import ScrollToTopOnMount from "../../elements/ScrollToTop.js";
 const AboutUs = () => (
-  <Loader>
-     <ScrollToTopOnMount/>
+
+  <Loader> 
+   <ScrollToTopOnMount/>
     <HeaderOne />
     <PageTitleAbout
-      // title="About Tostem"
-      // tagline=""
-      image=""
+      title="Lixil"
+       tagline="Link to Good Living"
+      image="/Tostem/Lixil_company.png"
     />
-    <WhoWeAreSeven />
-   <OurServicesThree 
-      title="About Us"
-      tagline="Part of your success"
+    {
+      // <WhoWeAreSeven />
+    }
 
+   <OurServicesThree 
+      title="About Lixil"
+      tagline="Link To Good Living"
      />
      { //<OurSkillsTwo 
       //  title="Our Skills"
@@ -39,6 +40,7 @@ const AboutUs = () => (
       //   />
       //   <ClientsBrand />
       }
+       <ClientsBrand />
     <FooterOne />
   </Loader>
 );

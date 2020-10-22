@@ -1,13 +1,19 @@
 import React from "react";
 import Loader from "../../components/Loader/Loader";
 import HeaderOne from "../../components/Header/HeaderOne";
-import PageTitleWidget from "../../components/PageTitle/PageTitleWidget";
+import PageTitleAbout from "../../components/PageTitle/PageTitleAbout";
 import FooterOne from "../../components/Footer/FooterOne";
+import ScrollToTopOnMount from "../../elements/ScrollToTop.js";
 
 const Privacy = () => (
-  <Loader>
+  <Loader> 
+  <ScrollToTopOnMount/>
     <HeaderOne />
-    <PageTitleWidget title="Our Journey" />
+   <PageTitleAbout
+       title="Our Journey"
+      // tagline=""
+      image=""
+    />
     <section>
       <div className="container">
         <div className="row">

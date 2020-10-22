@@ -7,38 +7,23 @@ import OurSkillsTwo from "../../components/OurSkills/OurSkillsTwo";
 import CounterOne from "../../components/Counters/CounterOne";
 import OurServicesThree from "../../components/OurServices/OurServicesThree";
 import OurTeamTwo from "../../components/Team/OurTeamTwo";
-import TestimonialsOne from "../../components/Testimonials/TestimonialsOne";
+import TestimonialsTwo from "../../components/Testimonials/TestimonialsTwo";
 import FooterOne from "../../components/Footer/FooterOne";
 import ScrollToTopOnMount from "../../elements/ScrollToTop.js";
+
 const AboutUs = () => (
   <Loader>
-     <ScrollToTopOnMount/>
+   <ScrollToTopOnMount/>
     <HeaderOne />
     <PageTitleAbout
       // title="About Tostem"
       // tagline=""
       image=""
     />
-    <WhoWeAreSeven />
-   <OurServicesThree 
-      title="About Us"
-      tagline="Part of your success"
-
-     />
-     { //<OurSkillsTwo 
-      //  title="Our Skills"
-   //    tagline="We develop big ideas that sell"
-   // />
-    //   <CounterOne />
-    // 
-  
-      // <OurTeamTwo title="MEET OUR TEAM" tagline="WE ARE STRONGER" />
-      //   <TestimonialsOne 
-      //     title="Testimonials"
-      //     tagline="Happy clients"
-      //   />
-      //   <ClientsBrand />
-      }
+   <TestimonialsTwo 
+      title="Our Team"
+      tagline=""
+    />
     <FooterOne />
   </Loader>
 );

@@ -1,7 +1,8 @@
 import React from "react";
 
 const TestimonialItem = ({ avatar, name, role, children }) => (
-  <div className="testimonial-item">
+  <a onClick={(e)=>{e.preventDefault(); alert("Clicked")}}>
+  <div className="testimonial-item hover">
     <div className="testimonial-content">
       <img
         className="img-responsive img-circle"
@@ -13,6 +14,7 @@ const TestimonialItem = ({ avatar, name, role, children }) => (
       <h4>{children}</h4>
     </div>
   </div>
+  </a>
 );
 
 export default TestimonialItem;
