@@ -34,7 +34,7 @@ const AboutUsOne = ({
           <ReactWow animation="fadeTop" delay="0.2s">
           <div className="col-md-6">
             <div className="arcon-video-box">
-              <img className="img-responsive" src={image} alt="" />
+             { <img className="img-responsive" src={image} alt="" />}
               <div className="arcon-video-box_overlay">
                 <div className="center-layout">
                   <div className="v-align-middle">

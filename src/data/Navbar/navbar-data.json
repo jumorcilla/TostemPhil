@@ -44,6 +44,12 @@
                 "title": "Our Brand Tostem",
                 "link": "/Tostem"
             }
+            ,
+            {
+                "id": 2.6,
+                "title": "Contact Us",
+                "link": "/Contact-us"
+            }
           
         ]
     },
@@ -125,20 +131,21 @@
         "megaMenu": false,
         "subMenu": []
     },
+   
     {
          "id": 5,
-        "title": "Other Service",
+        "title": "Other Services",
         "link": "/other",
         "isDropdown":true,
         "megaMenu": false,
         "subMenu": [
-         
-         {
+            {
                 "id": 4.1,
-                "title": "Contact",
-                "link": "/Contact"
+                "title": "Tostem Virtual Tour",
+                "link": "/Tour"
              
             },
+         
          {
                 "id": 4.2,
                 "title": "Dealer Locator",

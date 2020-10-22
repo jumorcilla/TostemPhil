@@ -17,17 +17,11 @@ const OurServicesThree = ({ title, tagline }) => (
         <h2 className="font-700">{title}</h2>
         <h4 className="mt-10 line-height-26 default-color">{tagline}</h4>
         <p className="mt-20">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
-          vulputate dolor. Nullam venenatis enim in quam euismod fringilla.
-          Donec in risus eget purus mattis varius. Nulla dapibus quis orci et
-          tincidunt. Phasellus in rhoncus quam. Fusce a est lacinia, ultricies
-          mi nec, rutrum dolor.
-        </p>
-        <p>
-          Donec vehicula cursus metus viverra aliquet. Nam vel malesuada diam.
-          Proin eleifend luctus mi, vel tincidunt sapien auctor nec. In quis
-          elit in mauris dignissim pharetra. Praesent efficitur dolor a quam
-          tristique ultricies.
+        LIXIL makes pioneering water and housing products that solve everyday, real-life challenges,
+         making better homes a reality for everyone, everywhere. Drawing on our Japanese heritage,
+          we create world-leading technology and innovate to make high quality products that transform homes. 
+          But the LIXIL difference is how we do this; through meaningful design, an entrepreneurial spirit, a dedication to improving accessibility for all, and responsible business growth.
+         Our approach comes to life through industry leading brands, including American Standard, GROHE, INAX, and TOSTEM.
         </p>
         <p className="mt-30">
          

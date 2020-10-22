@@ -10,12 +10,10 @@ const WhoWeAreSeven = () => (
       <div className="row">
         <HeadingSection
           title="Who We Are"
-          tagline="The world at your fingertips"
+          // tagline="The world at your fingertips"
         >
-          We are a fully in-house digital agency focusing on branding,
-          marketing, web design and development with clients ranging from
-          start-ups. We pride ourselves on partnering with clients in order to
-          give the most transparent and educational experience.
+        Manufactured under the brand name Tostem, its design technologies are originally developed in Japan. 
+        Tostem provides materials that are indispensable to the home construction industry.
         </HeadingSection>
       </div>
       <div className="row mt-50">

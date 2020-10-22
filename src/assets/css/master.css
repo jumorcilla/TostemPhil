@@ -261,6 +261,7 @@ nav.navbar.bootsnav.navbar-transparent .logo {
     transition: all .3s ease;
 }
 
+
 .logo img {
     max-height: 33px;
 	-webkit-transition: all .5s ease;
@@ -4532,7 +4533,7 @@ ul.footer-gallery li img {
 }
 
 .about-cover-bg {
-	background-image: url(../images/title-bg/title-hero-3.jpg);
+	background-image: url(../images/Tostem/Carousel-Image-4.jpg);
 }
 
 .service-cover-bg {

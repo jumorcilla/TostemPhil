@@ -13,7 +13,7 @@ const ContactFour = () =>  (
             </div>
             <div className="col-about-left col-md-6 text-left">
               <h2>Get in Touch</h2>
-              <h4 className="text-uppercase">Find your brand's voice</h4>
+             
               <ContactFormSix />
             </div>
           </div>
@@ -28,8 +28,8 @@ const ContactFour = () =>  (
                   <Icofont icon="google-map" className="font-50px white-icon" />
                   <h2>Office Address</h2>
                   <p>
-                    The PATH Toronto, <br />
-                    ON M5B 2H1, Canada
+                    Tostem Philippines, <br />
+                    Philippines
                   </p>
                 </div>
               </div>
@@ -39,8 +39,8 @@ const ContactFour = () =>  (
                 <div className="text-center white-color">
                   <Icofont icon="email" className="font-50px white-icon" />
                   <h2>Email Us</h2>
-                  <p className="mb-0">hello@scoda.com</p>
-                  <p>jobs@scoda.com</p>
+                  <p className="mb-0">email@tostem.com</p>
+                  <p>email2@tostem.com</p>
                 </div>
               </div>
             </div>
