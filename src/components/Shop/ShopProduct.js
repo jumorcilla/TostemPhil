@@ -118,21 +118,7 @@ const ShopProduct = () => {
           </div>
         </div>
       </div>
-      <div className="row mt-100">
-        {dataProducts
-          .filter((v, i) => i < 4)
-          .map((product) => (
-            <ShopItem
-              key={product.id}
-              layout=""
-              image={product.image}
-              title={product.title}
-              currency={product.currency}
-              price={product.price}
-              oldPrice={product.oldprice}
-            />
-          ))}
-      </div>
+
     </>
   );
 };

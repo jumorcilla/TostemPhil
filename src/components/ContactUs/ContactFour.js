@@ -49,8 +49,8 @@ const ContactFour = () =>  (
                 <div className="text-center white-color">
                   <Icofont icon="iphone" className="font-50px white-icon" />
                   <h2>Call Us</h2>
-                  <p className="mb-0">(+1) 613 555-0105</p>
-                  <p>(+1) 613 555-0105</p>
+                  <p className="mb-0">(+1) xxx xxx-xxxx</p>
+                  <p>(+1) xxx xxx-xxxx</p>
                 </div>
               </div>
             </div>

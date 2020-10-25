@@ -30,6 +30,11 @@ import AboutLixil from "./pages/about/AboutLixil";
 import OurJourney from "./pages/about/OurJourney";
 import ContactUs from "./pages/about/ContactUs"
 import OurTeam from "./pages/about/OurTeam"
+
+//Products
+import ProductPage from "./pages/products/ProductsPage"
+import ProductDetail from './pages/products/ProductDetails'
+import ProductSinglePage from './pages/products/ProductSingleDetails'
 // Pages
 import ServiceSimple from "./pages/services/ServiceSimple";
 import ServiceCreative from "./pages/services/ServiceCreative";
@@ -235,6 +240,23 @@ function App() {
             path={`${process.env.PUBLIC_URL}/our-team`}
             component={OurTeam}
           />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/products`}
+            component={ProductPage}
+          />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/product-details`}
+            component={ProductDetail}
+          />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/product-single-detail`}
+            component={ProductSinglePage}
+            // getComponent={(location, cb) => {import('./pages/products/ProductSingleDetails').then((component) => { cb(null, component.default || component); }); }}
+          />
+          
           <Route
             exact
             path={`${process.env.PUBLIC_URL}/service-simple`}

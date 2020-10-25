@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Coverflow from 'react-coverflow';
 import { StyleRoot } from 'radium';
 import dataGallery from "../../../data/Gallery/gallery-construction-data.json";
-
+import 'swiper/css/swiper.css'
 const GalleryConstruction = (props) => (
   <section className="pb-0">
     <div className="container-fluid">
@@ -50,7 +50,7 @@ const GalleryConstruction = (props) => (
         >
           
           {dataGallery.map((item) => (
-             <img key = {item.id} src={require("../../../assets/images/" + item.image)} alt={item.title} data-action="https://facebook.github.io/react/"/>
+             <img key = {item.id} src={require("../../../assets/images/" + item.image)} alt={item.title} data-action={`${process.env.PUBLIC_URL}/product-details?link=${item.id}`}/>
               
             ))}
 

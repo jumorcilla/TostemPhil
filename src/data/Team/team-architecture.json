@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name": "Tyson Marks",
-    "role": "Engineer",
+    "name": "Tostem 1",
+    "role": "role",
     "image": "team/team-18.jpg",
     "social": [
       {
@@ -24,8 +24,8 @@
   },
   {
     "id": 2,
-    "name": "James Smith",
-    "role": "Architech",
+    "name": "Tostem 2",
+    "role": "role",
     "image": "team/team-19.jpg",
     "social": [
       {
@@ -47,8 +47,8 @@
   },
   {
     "id": 3,
-    "name": "Mary Smith",
-    "role": "Designer",
+    "name": "Tostem 3",
+    "role": "role",
     "image": "team/team-20.jpg",
     "social": [
       {
@@ -69,9 +69,9 @@
     ]
   },
   {
-    "id": 3,
-    "name": "Mary Smith",
-    "role": "Designer",
+    "id": 4,
+    "name": "Tostem 4",
+    "role": "role",
     "image": "team/team-20.jpg",
     "social": [
       {
@@ -92,9 +92,9 @@
     ]
   },
   {
-    "id": 3,
-    "name": "Mary Smith",
-    "role": "Designer",
+    "id":5,
+    "name": "Tostem 4",
+    "role": "role",
     "image": "team/team-20.jpg",
     "social": [
       {

@@ -40,7 +40,7 @@ const DropdownMenu = () => {
             onClick={dropdown.isDropdown === true?(e) => handleHover(e):null}
             key={i}
           >
-            <a href={dropdown.isDropdown === true? "index": dropdown.link} className={dropdown.isDropdown ===true? "dropdown-toggle" : ""} data-toggle="dropdown">
+            <a href={dropdown.isDropdown === true? "index": process.env.PUBLIC_URL +dropdown.link} className={dropdown.isDropdown ===true? "dropdown-toggle" : ""} data-toggle="dropdown">
               {dropdown.title}
             </a>
             {dropdown.isDropdown === true? 
