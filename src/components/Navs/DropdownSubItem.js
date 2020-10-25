@@ -5,7 +5,7 @@ const DropdownSubItem = ({ item }) => (
   <ul className="dropdown-menu animated">
     {item.map((val, i) => (
       <li key={i}>
-        <Link to={val.link}>{val.title}</Link>
+        <Link to={process.env.PUBLIC_URL +val.link} >{val.title}</Link>
       </li>
     ))}
   </ul>
