@@ -19,7 +19,7 @@ function useQuery() {
 }
 
 
-const AboutUs = (props) => {
+const ProductDetails = (props) => {
    const settings = {
     dots: true,
     centerMode: false,
@@ -33,6 +33,10 @@ const AboutUs = (props) => {
    let query = useQuery();
    const [val, setVal] = useState(query.get("link"));
    console.log(val)
+
+  console.log('match', props.match)
+
+
   return (
 
   <Loader> 
@@ -69,4 +73,4 @@ const AboutUs = (props) => {
 )
 };
 
-export default AboutUs;
+export default ProductDetails;

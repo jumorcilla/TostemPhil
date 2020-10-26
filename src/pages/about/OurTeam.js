@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import Loader from "../../components/Loader/Loader";
 import HeaderOne from "../../components/Header/HeaderOne";
 import PageTitleAbout from "../../components/PageTitle/PageTitleAbout";
@@ -11,7 +11,13 @@ import TestimonialsTwo from "../../components/Testimonials/TestimonialsTwo";
 import FooterOne from "../../components/Footer/FooterOne";
 import ScrollToTopOnMount from "../../elements/ScrollToTop.js";
 
-const AboutUs = () => (
+const AboutUs = () => {
+  const [idTeam,setID] = useState(0)
+  function getID (id){
+    setID(id);
+  }
+
+  return(
   <Loader>
    <ScrollToTopOnMount/>
     <HeaderOne />
@@ -24,8 +30,9 @@ const AboutUs = () => (
       title="Our Team"
       tagline=""
     />
+
     <FooterOne />
   </Loader>
-);
+)};
 
 export default AboutUs;

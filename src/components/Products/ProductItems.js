@@ -12,12 +12,7 @@ const ProductItems = ({title,details,id,serviceImg,link})=>{
 			?
 				
 			<Link 
-				to = {{
-						pathname:`${process.env.PUBLIC_URL}/product-details`,
-						aboutProps:{
-							name:{link}
-						}
-					}}
+				to = {`${process.env.PUBLIC_URL}/product-details?link=${link}`}
 			
 			>
 			 
@@ -50,12 +45,7 @@ const ProductItems = ({title,details,id,serviceImg,link})=>{
 		  </Link>
 			:
 				<Link 
-					to = {{
-						pathname:`${process.env.PUBLIC_URL}/product-details`,
-						aboutProps:{
-							name:{link}
-						}
-					}}
+					to = {`${process.env.PUBLIC_URL}/product-details?link=${link}`}
 				
 				>
 				  <span></span>

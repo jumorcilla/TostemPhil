@@ -102,11 +102,12 @@ import TeamMembers from "./pages/elements/TeamMembers";
 import Countdowns from "./pages/elements/Countdowns";
 import ScrollToTop from "./helpers/ScrollToTop";
 import Demos from "./pages/Demos";
-
+import {createBrowserHistory} from 'history'
+const history = createBrowserHistory();
 function App() {
 
   return (
-    <Router basename={"/"}>
+    <Router  history={history} basename={"/"}>
       <ScrollToTop>
         <Switch>
           <Route exact path={`${process.env.PUBLIC_URL}/`} component={Construction} />
@@ -245,11 +246,7 @@ function App() {
             path={`${process.env.PUBLIC_URL}/products`}
             component={ProductPage}
           />
-          <Route
-            exact
-            path={`${process.env.PUBLIC_URL}/product-details`}
-            component={ProductDetail}
-          />
+          
           <Route
             exact
             path={`${process.env.PUBLIC_URL}/product-single-detail`}
@@ -257,6 +254,12 @@ function App() {
             // getComponent={(location, cb) => {import('./pages/products/ProductSingleDetails').then((component) => { cb(null, component.default || component); }); }}
           />
           
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/product-details`}
+            component={ProductDetail}
+           
+          />
           <Route
             exact
             path={`${process.env.PUBLIC_URL}/service-simple`}
@@ -506,36 +509,6 @@ function App() {
             exact
             path={`${process.env.PUBLIC_URL}/google-maps`}
             component={GoogleMaps}
-          />
-          <Route
-            exact
-            path={`${process.env.PUBLIC_URL}/progress-bar-ring`}
-            component={ProgressBarRing}
-          />
-          <Route
-            exact
-            path={`${process.env.PUBLIC_URL}/theme-icons`}
-            component={ThemeIcons}
-          />
-          <Route
-            exact
-            path={`${process.env.PUBLIC_URL}/boxed-icons`}
-            component={BoxedIcons}
-          />
-          <Route
-            exact
-            path={`${process.env.PUBLIC_URL}/grid-columns`}
-            component={GridColumns}
-          />
-          <Route
-            exact
-            path={`${process.env.PUBLIC_URL}/team-member`}
-            component={TeamMembers}
-          />
-          <Route
-            exact
-            path={`${process.env.PUBLIC_URL}/countdowns`}
-            component={Countdowns}
           />
           <Route component={Page404} />
         </Switch>

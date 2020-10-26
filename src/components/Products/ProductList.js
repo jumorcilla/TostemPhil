@@ -39,7 +39,7 @@ const ProductList = ({ title, tagline}) => {
                 title ={val.title} 
                 details={val.details} 
                 serviceImg={require("../../assets/images/"+val.image)}
-                link={val.link} 
+                link={val.id} 
               />)
             }
           </div>

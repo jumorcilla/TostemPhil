@@ -1,6 +1,7 @@
 import React from "react";
 
-const ProductInformation = ({ title, tagline,serviceImg,description }) => (
+const ProductInformation = ({ title, tagline,serviceImg,description }) => {
+  return(
   <section className="light-bg">
     <div className="col-md-6 col-sm-4 bg-flex bg-flex-right">
       <div
@@ -9,7 +10,7 @@ const ProductInformation = ({ title, tagline,serviceImg,description }) => (
       >
       <div
         className="bg-flex-holder bg-flex-cover"
-        style={{ backgroundImage: `url(${require(serviceImg)})` }}
+        style={{ backgroundImage: `url(${serviceImg})` }}
       ></div>
       </div>
     </div>
@@ -26,6 +27,6 @@ const ProductInformation = ({ title, tagline,serviceImg,description }) => (
       </div>
     </div>
   </section>
-);
+)};
 
 export default ProductInformation;
