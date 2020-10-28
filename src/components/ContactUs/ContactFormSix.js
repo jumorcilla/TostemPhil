@@ -82,7 +82,7 @@ const ContactFormSix = () => {
         ></textarea>
         <div className="help-block with-errors mt-20"></div>
       </div>
-      <button type="submit" name="submit" className="btn btn-color btn-yellow btn-circle">
+      <button type="submit" name="submit" className="btn btn-color btn-red btn-circle">
         Send Message
       </button>
     </form>

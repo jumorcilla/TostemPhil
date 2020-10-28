@@ -9,6 +9,7 @@ const GalleryConstruction = (props) => (
         <div className="col-md-8 section-heading">
           <h2 className="text-uppercase">{props.title}</h2>
           <hr className="text-center yellow-bg" />
+          
         </div>
       </div>
       <div className="row mt-50">

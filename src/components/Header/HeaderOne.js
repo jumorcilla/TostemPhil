@@ -94,7 +94,7 @@ const HeaderOne = ({ type }) => {
            <div className="input-group">
                 <input placeholder="Search" type="search"  style={{ height: '48px' }} className="form-control"/>
                 <span className="input-group-btn">
-                <button className="btn btn-yellow btn-square" type="button">   <Icofont icon="search-1" /></button>
+                <button className="btn btn-red btn-square" type="button">   <Icofont icon="search-1" /></button>
                 </span>
                 </div>
         </div>

@@ -60,7 +60,7 @@ const BlogSlider = () => {
                     <h3>
                       <a href={`${process.env.PUBLIC_URL}/blog-grid`}>{post.title}</a>
                     </h3>
-                    <h6 style= {{color:"#fdd835"}}>{post.published}</h6>
+                    <h6 style= {{color:"#d32f2f"}}>{post.published}</h6>
                     <p>{parse(post.excerpt)}</p>
                     <a className="readmore" href="!#">
                       <span>Read More</span>

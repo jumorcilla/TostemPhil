@@ -1824,11 +1824,14 @@ div.search-nav.hide{
 }
 }
 }
+.slick-prev:before, .slick-next:before{
+    color:black !important;
+}
 .testimonial .slick-prev:before, .testimonial .slick-next:before{
     color:black !important;
 }
 .testimonial .slick-dots li.slick-active button {
-    background-color:#d4c11d!important;
+    background-color:#d42e22!important;
  }
  .slick-dots li.slick-active button:before {
     color:transparent!important;
@@ -1887,4 +1890,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li > a{
 
 .dark-color{
     color:black !important;
+}
+p.light-color{
+    margin-top:0px !important;
+    color:#fff;
+    font-size:17px;
+    font-family: 'Poppins', sans-serif;
 }

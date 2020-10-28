@@ -10,7 +10,21 @@ const GalleryConstruction = (props) => (
       <div className="row">
         <div className="col-md-8 section-heading">
           <h2 className="text-uppercase">{props.title}</h2>
-          <hr className="text-center yellow-bg" />
+          <hr className="text-center red-bg" />
+          <p className="mt-20">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
+          vulputate dolor. Nullam venenatis enim in quam euismod fringilla. Donec
+          in risus eget purus mattis varius. Nulla dapibus quis orci et tincidunt.
+          Phasellus in rhoncus quam. Fusce a est lacinia, ultricies mi nec, rutrum
+          dolor.
+        </p>
+        <p>
+          Donec vehicula cursus metus viverra aliquet Aliquam tincidunt dolor a
+          auctor finibus. Sed in sodales magna. Etiam eget velit nec urna
+          facilisis fringilla sed eget purus. Ut pulvinar ullamcorper mauris non
+          tristique.
+        </p>
+         <a className="btn btn-color btn-red btn-square" href={`${process.env.PUBLIC_URL}/products`}> Read More </a>
         </div>
       </div>
       <div className="row mt-50">

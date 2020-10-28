@@ -5,6 +5,7 @@ import ProductSingle from "../../components/Products/ProductInformationDetails/P
 import FooterOne from "../../components/Footer/FooterOne";
 import { Link, useLocation, BrowserRouter as Router } from "react-router-dom";
 import PageTitleAbout from "../../components/PageTitle/PageTitleAbout";
+import ScrollToTopOnMount from "../../elements/ScrollToTop.js";
 function useQuery() {
   return new URLSearchParams(useLocation().search);
 }
@@ -17,10 +18,12 @@ const ProductSingleDetails = () => {
  useEffect(() => {
   setcategoryID(query.get("categoryID"));
   setproductID(query.get("productID"));
+
  }, [query.get("categoryID"), query.get("productID")]);
 
 return (
   <Loader>
+   <ScrollToTopOnMount/>
       <HeaderOne />
      <PageTitleAbout
       title=""
@@ -29,7 +32,7 @@ return (
       
       image=""
     />
-    <section className="light-bg">
+    <section className="light-bg" >
       <div className="container">
         <ProductSingle categoryID ={categoryID} productID={productID}/>
       </div>

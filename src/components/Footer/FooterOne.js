@@ -64,7 +64,7 @@ const FooterOne = () => (
                 <div className="input-group">
                 <input placeholder="Email Address" type="search"  style={{ height: '48px' }} className="form-control"/>
                 <span className="input-group-btn">
-                <button className="btn btn-yellow btn-square" type="button"> Signup</button>
+                <button className="btn btn-red btn-square" type="button"> Signup</button>
                 </span>
                 </div>
                 </div>

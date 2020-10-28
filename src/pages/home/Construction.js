@@ -14,19 +14,19 @@ import BlogSlider from "../../components/Blog/BlogSlider";
 import AboutUsOne from "../../components/AboutUs/AboutUsOne";
 import image from "../../assets/images/about-video-img.jpg";
 const Construction = () => {
-  const [toggler, setToggler] = useState(false);
+const [toggler, setToggler] = useState(false);
   return(
   <Loader>
     <HeaderOne />
     <ConstructionSlider data={dataSlider} />
    
-    <GalleryConstruction title ="Product Categories"/>
+    <GalleryConstruction title ="About Our Products"/>
     { /*<CounterConstruction />  <ServicesConstruction  title ="Product Categories"/>*/}
   
    <AboutUsOne
       title="About Our Company"
       textButton="Read more"
-      linkButton="!#"
+      linkButton={`${process.env.PUBLIC_URL}/about-us`}
       image={image}
       toggler={toggler}
       setToggler={setToggler}

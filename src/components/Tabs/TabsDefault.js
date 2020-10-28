@@ -20,7 +20,7 @@ const TabsDefault = () => (
                 </Tab>
               ))}
             </TabList>
-            <div className="tab-content text-center">
+            <div className="tab-content" >
               {dataTabs.map((tab) => (
                 <TabPanel key={tab.id} className="tab-pane fade in active">
                   <p>{tab.text}</p>
